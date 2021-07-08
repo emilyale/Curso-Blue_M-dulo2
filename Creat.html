@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Registro</title>
+    <link rel="stylesheet" href="/static/estilo.css" />
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="bloco">
+        
+        <h1>Criar Registros</h1> 
+    </div>
+
+    
+    {%if not id_registro_novo%}
+
+    <div class="bloco">
+        <form class="form" method="POST">
+
+            <div class= "bloco form_input">
+                <label for ="nome">Raça:</label>
+                <input type="text" id="nome" name="nome">   
+            </div>
+
+            <div class= "bloco form_input">
+                <label for ="imagem">Imagem:</label>
+                <input type="text" id="imagem" name="imagem">
+            
+             <div class= "bloco form_input"> 
+                <label for ="curiosidade"> Curiosidades:</label>
+                <input type="text" id="curiosidade" name="curiosidade">
+
+            </div>
+            <div class="bloco form_input">
+                <input type="submit" class="botao" value="Enviar">
+        </form>        
+    </div>
+    {% else %}
+
+    <div class ="bloco">
+        <p>
+            Registro criado com sucesso!<br /><br />
+            O ID Atribuido foi: <span class = "id_registro_novo">{{id_registro_novo}}</span>
+            <a href="/read/{{id_registro_novo}}" class="botao">Visualizar esse registro?</a>
+        </p>
+    </div>
+
+    {% endif %}
+</body>
+</html>

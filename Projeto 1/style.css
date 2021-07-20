@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(208, 252, 248);
+    flex-direction: column;
+    
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+
+}
+.botao{
+    text-align: center;
+}
+
+.primeira {
+    display: flex;
+    background-color: #045458;
+    font-weight: bold;
+    justify-content: space-around;
+    flex-direction: column;
+    border-style:solid; 
+    align-items: stretch; 
+    position: absolute;
+    
+    
+}
+
+.segunda {
+    display: flex;
+    background-color: teal;
+    justify-content: space-around;
+    flex-direction: column;
+    border-style: solid;
+    align-items: stretch;
+}
+.imgRedonda{
+    border-radius: 80%;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}

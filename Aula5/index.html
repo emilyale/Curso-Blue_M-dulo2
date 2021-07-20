@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+    <title>Aula 05 - JS!!!</title>
+</head>
+<body>
+    <h1  id="titulo">Aula 05 - JavaScript</h1>
+    
+    <section>
+        <div class="fundobranco">
+            <p>A aula de hoje será sobre JavaScript</p>
+            <img id="download" src="download.png" height="100px" width="100px">
+        </div>
+        <div class="fundoazul">
+            <p>Antes iremos terminar o nosso potfólio!!</p>
+            <p>Falta só a parte do formulário</p>
+            <img src="reforma-tributaria.jpg" height="100px" width="100px">
+        </div>
+    </section>
+    <div>
+        <ul class="listaorganizada">
+            <li>Como criar o formulário</li>
+            <li>Elementos a serem usados</li>
+            <li>Botão de envio</li>
+        </ul>
+    </div>
+    <div class="fundobranco">
+        <a href="https://www.blueedtech.com.br" target="_blank">Para mais informações clique aqui</a>
+    </div>
+    <p>formulario teste:</p>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+                <select name="cidade" id="cidade">
+                <option></option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Ouro Preto</option>
+            </select>
+        </div>
+        <div>
+        <label for="m">Masculino:</label>
+        <input type="radio" id="f" value="m" name="genero">
+        <label for ="f">Feminino:</label>
+        <input type="radio" id="f" value="f" name="genero">
+        <label for="x">Outro: </label>
+        <input type="radio" id="x" value="x" name="genero">
+    </div>
+    <div>
+        <label for="check">Selecione: </label>
+        <input type="checkbox" id="check" name="input-checkbox">
+    </div>
+    <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="input-password">
+    </div>
+    <div>
+        <label for="data" >Data:</label>
+        <input type="date" id="data" name="input-date">
+    </div>
+    </form>
+    <button id="botao"  value = "estado1">Clique aqui!</button> <!--forma para colocar um de cada vez-->
+    
+    <button onclick="formularioteste()">Clique aqui</button> <!--forma pra colocar varios botoes -->
+    <script type="text/javascript" src="script.js">
+   
+    </script>
+</body>
+</html>

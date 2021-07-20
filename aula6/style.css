@@ -1,0 +1,6 @@
+body{
+    background-color: rgb(233, 106, 131);
+}
+.cardapio{
+    display: flexbox;
+}

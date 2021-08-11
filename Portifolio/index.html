@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portifólio </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="#" class="logo">Tag</a>   <!--Se eu quiser colocar um link na logo, colocar nesse href-->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Sobre</a></li>
+                <li><a href="#" >Contato</a></li>
+            </ul>
+        </nav>
+        <div class="conteudo-texto">
+            <p>Emily Alessandra</p>
+            <p>Estudante de programação</p>
+            
+        </div>
+        <div>
+            <img src="img/imagemeu.jpg" class="imgem" alt="Uma foto minha">
+        </div>
+    
+    </section>
+    <div class="conteudo-sobre">
+        <img src="img/imagemfamilia.jpg" alt="Eu e minha família">
+        <div class="texto-sobre">
+
+            <p>Sobre</p>
+            <p>Olá, meu nome é Emily, tenho 19 anos e moro Poá(São Paulo)</p>
+            <p>Atualmente trabalho na Banco Sofisa, na área de formalização. Sou apaixonada por tecnologia e estudo do ser humano, duas áreas distintas, mas que se complementam pra mim. Amo música e amo estar com a minha família e amigos.</p>
+
+        </div>
+    </div>
+    
+    <div class="texto">
+        <p>Entre em contato comigo:</p>
+    </div>
+    <div class="contato">
+     
+        <ul>
+            <li>
+                <a href="https://github.com/emilyale" target="_blanck">
+                    <img src="img/githublogo.png" border="0"
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/emily-alessandra-1536751a1/" target="_blanck">
+                    <img src="img/linkedinlogo.png" border="0"
+                </a>    
+            </li>
+            <li>
+                <a href="https://www.instagram.com/emiily_020/" target="_blanck">
+                    <img src="img/instagram-logo-6.png" border="0"
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="texto2">
+        <p>Me envie uma mensagem:</p>
+    </div>
+
+    <div class="formulario">
+        
+        <form action='/send' method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem"></textarea>
+            </div>
+         </form>
+
+         <div>
+            <button onclick="btn()">Enviar</button>
+        </div>
+       
+         
+    </div>
+    <div id="carregamento">
+        <p>Enviando mensagem</p>
+        <div id="loader"></div>
+     </div>
+        
+  
+     <script type="text/javascript" src="script.js">
+   
+     </script>
+
+
+</body>
+</html>
